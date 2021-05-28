@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
+import gettext
+#_=gettext.translation('accout_scanner', '/usr/share/locale').gettext
 
 def accout_scanner(accout,proxy):
     accout=str(accout)
@@ -52,4 +54,4 @@ def accout_scanner(accout,proxy):
     return genre
 
 if __name__ == '__main__':
-    print(accout_scanner(13888888888))
+    print(accout_scanner(13888888888,'sock5://127.0.0.1:9050'))
